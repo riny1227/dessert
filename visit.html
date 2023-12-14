@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head><title>나만의 디저트</title></head>
+<style>
+	@import url(layout.css);
+	section > nav{
+		overflow:auto;
+		position:absolute;
+		top:130px;
+		bottom:20px;
+		left:250px;
+		right:5px;
+		padding:7px;
+		border:3px solid silver;
+		border-radius: 9px;
+	}
+</style>
+<body>
+	<div class="bookcover"> <!--bookcover-->
+		<div class="bookdot"> <!--bookdot-->
+			<div class="page"> <!--page-->
+				<header id="day">
+					<br><strong>&emsp;TODAY <span style="color: coral;"><script src="day.js"></script></span></strong>&emsp;&emsp;&emsp;&nbsp; <a href="home.html" style="color:darkblue; font: bolder 24px cursive;">Cookie_love</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span style="color: black; font: 15px monospace;">http://url주소/riny1227</span></header> <!--day-->
+				<nav id="menubar">
+					<ul>
+						<li><a href="home.html">홈</a></li>
+						<li><a href="board.html">게시판</a></li>
+						<li><a href="cafe.html">맛집</a></li>
+						<li><a href="recipe.html">레시피</a></li>
+						<li><a href="review.html">후기</a></li>
+						<li><a href="visit.html">방명록</a></li>
+					</ul>
+				</nav>
+				<br>
+				<div id="window">
+					<aside>
+						<nav>
+							<img src="profile.jpg" widht="100" height="200">
+							<div class="text"><br>@riny1227<hr>디저트 레시피 보고가세요~<br></div>
+							<p style="font: 17px monospace; color: blue;">날씨를 선택하면 <br>레시피 추천해드립니다><</p>
+							<form style="font: 16px monospace;">	
+								오늘의 날씨는? : <br><select name="weather" onchange="myFunction(this.value)">
+														<option value="">선택</option>
+														<option value="맑음">맑음</option>
+														<option value="흐림">흐림</option>
+														<option value="비">비</option>
+														<option value="눈">눈</option>
+													</select>
+								<script>
+									function myFunction(weather){
+									if(weather == "맑음")
+										recommend = "빙수 레시피를 추천합니다!";
+									else if(weather == "흐림")
+										recommend = "당근케이크 레시피를 추천합니다!";
+									else if(weather == "비")
+										recommend = "호떡 레시피를 추천합니다!";
+									else if(weather == "눈")
+										recommend = "마들렌 레시피를 추천합니다!";
+									else
+										recommend = "날씨를 선택해주세요!"
+									alert(recommend);	
+									}								
+								</script>
+							</form>
+						</nav>
+					</aside>
+					<section>
+						<nav>
+							<div class="bold-text"><strong>&emsp;방명록</strong></div>
+							<hr>
+							<div class="title">&emsp;&nbsp;#2 <span class="title_date"> (2022. 12. 11 23:10)</span></div>
+							<p style="font: 17px monospace;">&emsp;레시피 영상도 같이 있어서 쉽게 따라할 수 있었어요!<br> 
+							&nbsp;좋은 정보 감사합니다!!!</p>
+							<div class="title">&emsp;&nbsp;#1 <span class="title_date"> (2022. 11. 28 19:00)</span></div>
+							<p style="font: 17px monospace;">&emsp;맛집 추천 감사합니다!! 갔다왔는데 너무 맛있었어요~<br>
+							&nbsp;맛집 더 올려주세요!!</p>
+						</nav>
+					</section>
+				</div> <!--window-->
+			</div> <!--page-->
+		</div> <!--bookdot-->
+	</div> <!--bookcover-->	
+</body>
+</html>

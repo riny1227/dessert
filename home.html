@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>나만의 디저트</title>
+<style>
+	@import url(layout.css);
+</style>
+</head>
+<body>
+	<div class="bookcover"> <!--bookcover-->
+		<div class="bookdot"> <!--bookdot-->
+			<div class="page"> <!--page-->
+				<header id="day">
+					<br><strong>&emsp;TODAY <span style="color: coral;"><script src="day.js"></script></span></strong>&emsp;&emsp;&emsp;&nbsp; <a href="home.html" style="color:darkblue; font: bolder 24px cursive;">Cookie_love</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span style="color: black; font: 15px monospace;">http://url주소/riny1227</span></header> <!--day-->
+				<nav id="menubar">
+					<ul>
+						<li><a href="home.html">홈</a></li>
+						<li><a href="board.html">게시판</a></li>
+						<li><a href="cafe.html">맛집</a></li>
+						<li><a href="recipe.html">레시피</a></li>
+						<li><a href="review.html">후기</a></li>
+						<li><a href="visit.html">방명록</a></li>
+					</ul>	
+				</nav>
+				<br>
+				<div id="window">
+					<aside>
+						<nav>
+							<img src="profile.jpg" widht="100" height="200">
+							<div class="text"><br>@riny1227<hr>디저트 레시피 보고가세요~<br></div>
+							<p style="font: 17px monospace; color: blue;">날씨를 선택하면 <br>레시피 추천해드립니다><</p>
+							<form style="font: 16px monospace;">	
+								오늘의 날씨는? : <br><select name="weather" onchange="myFunction(this.value)">
+														<option value="">선택</option>
+														<option value="맑음">맑음</option>
+														<option value="흐림">흐림</option>
+														<option value="비">비</option>
+														<option value="눈">눈</option>
+													</select>
+								<script>
+									function myFunction(weather){
+									if(weather == "맑음")
+										recommend = "빙수 레시피를 추천합니다!";
+									else if(weather == "흐림")
+										recommend = "당근케이크 레시피를 추천합니다!";
+									else if(weather == "비")
+										recommend = "호떡 레시피를 추천합니다!";
+									else if(weather == "눈")
+										recommend = "마들렌 레시피를 추천합니다!";
+									else
+										recommend = "날씨를 선택해주세요!"
+									alert(recommend);	
+									}								
+								</script>
+							</form>
+						</nav>
+					</aside>
+					<section>
+						<nav>
+							<div class="bold-text"><strong>&emsp;Updated news</strong></div>
+							<hr>
+							<div id="update-news">
+								<div class="left">
+								    <h3><span id="recipe">&nbsp;<a href="recipe.html">레시피</a>&nbsp;</span><span> 당근케이크 레시피&nbsp;&nbsp;</span></h3>
+								    <h3><span id="board">&nbsp;&nbsp;<a href="board.html">후기&nbsp;</a>&nbsp;</span><span>&nbsp;&nbsp;꼭 먹어보세요!!</span></h3>
+                           			<h3><span id="recipe">&nbsp;<a href="recipe.html">레시피</a>&nbsp;</span><span> 마들렌 레시피</span></h3></div>
+								<div class="right">
+									<h3 style="line-height:20px;">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="board.html" style="background-color:#f29aad;">게시판</a> <span id="number">2/25</span> &emsp;&emsp;&emsp;<a href="cafe.html" style="background-color:#f29aad;">맛 집</a> <span id="number">3/25&nbsp;</span></h3>
+									<h3 style="line-height:20px;">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="recipe.html" style="background-color:#f29aad;">레시피</a> <span id="number">5/25</span> &emsp;&emsp;&emsp;<a href="review.html" style="background-color:#f29aad;">후 기</a> <span id="number">2/25&nbsp;</span></h3>
+									<h3 style="line-height:20px;">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="visit.html" style="background-color:#f29aad;">방명록</a> <span id="number">2/25</span><br></div>
+							</div> <!--update-news-->
+						</nav>
+						<nav>
+							<div class="bold-text"><strong>&emsp;Preview</strong></div>
+							<hr>
+							<div id="preview">
+								<div>				
+									<video src="마들렌.mp4" width="290" height="192" controls>브라우저가 video 태그를 지원하지 않습니다.</video></div><!--left-->
+								<div>&emsp;</div>
+								<div>
+									<h3><a href="recipe.html" style="background-color:#aa5199;">&lt;마들렌 레시피&gt;</a></h3>
+									<details>
+										<summary style="font-size:17px;">준비물</summary>
+										<ul>
+											<li>계란 60g</li>
+											<li>버터 60g</li>
+											<li>설탕 60g</li>
+											<li>박력분 60g</li>
+											<li>베이킹파우더 2g</li>
+											<li>레몬 껍질(제스트)</li>
+									</details>
+									<details>
+										<summary style="font-size:17px;">레시피</summary>
+										<ul style="list-style-type: decimal;">
+											<p style="color:blue">사전작업</p>
+											<li>실온에 둔 버터를 틀에 발라 주세요.</li>
+											<li>밀가루는 미리 1번 체를 쳐 놓으세요.</li>
+											<li style="color:red">레몬은 깨끗하게 세척하여 준비해 두세요.(중요)</li>
+										</ul>
+										<ul style="list-style-type: decimal;">
+											<li>실온에 둔 버터를 틀에 발라 주세요.</li>
+											<li>밀가루는 미리 1번 체를 쳐 놓으세요.</li>
+											<li style="color:red">레몬은 깨끗하게 세척하여 준비해 두세요.(중요)</li>
+										</ul>
+									</details>
+									<details>
+										<summary style="font-size:17px;">추천 음료</summary>
+										<p>말차라떼</p>
+									</details>
+								</div>
+						</nav>
+					</section>
+				</div> <!--window-->
+			</div> <!--page-->
+		</div> <!--bookdot-->
+	</div> <!--bookcover-->
+</body>
+</html>

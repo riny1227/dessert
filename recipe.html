@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>나만의 디저트</title>
+<style>
+	@import url(layout.css);
+	section > nav{
+		overflow:auto;
+		position:absolute;
+		top:130px;
+		bottom:20px;
+		left:250px;
+		right:5px;
+		padding:7px;
+		border:3px solid silver;
+		border-radius: 9px;
+	}
+</style>
+</head>
+<body>
+	<div class="bookcover"> <!--bookcover-->
+		<div class="bookdot"> <!--bookdot-->
+			<div class="page"> <!--page-->
+				<header id="day">
+					<br><strong>&emsp;TODAY <span style="color: coral;"><script src="day.js"></script></span></strong>&emsp;&emsp;&emsp;&nbsp; <a href="home.html" style="color:darkblue; font: bolder 24px cursive;">Cookie_love</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span style="color: black; font: 15px monospace;">http://url주소/riny1227</span></header> <!--day-->
+				<nav id="menubar">
+					<ul>
+						<li><a href="home.html">홈</a></li>
+						<li><a href="board.html">게시판</a></li>
+						<li><a href="cafe.html">맛집</a></li>
+						<li><a href="recipe.html">레시피</a></li>
+						<li><a href="review.html">후기</a></li>
+						<li><a href="visit.html">방명록</a></li>
+					</ul>
+				</nav>
+				<br>
+				<div id="window">
+					<aside>
+						<nav>
+							<img src="profile.jpg" widht="100" height="200">
+							<div class="text"><br>@riny1227<hr>디저트 레시피 보고가세요~<br></div>
+							<p style="font: 17px monospace; color: blue;">날씨를 선택하면 <br>레시피 추천해드립니다><</p>
+							<form style="font: 16px monospace;">	
+								오늘의 날씨는? : <br><select name="weather" onchange="myFunction(this.value)">
+														<option value="">선택</option>
+														<option value="맑음">맑음</option>
+														<option value="흐림">흐림</option>
+														<option value="비">비</option>
+														<option value="눈">눈</option>
+													</select>
+								<script>
+									function myFunction(weather){
+									if(weather == "맑음")
+										recommend = "빙수 레시피를 추천합니다!";
+									else if(weather == "흐림")
+										recommend = "당근케이크 레시피를 추천합니다!";
+									else if(weather == "비")
+										recommend = "호떡 레시피를 추천합니다!";
+									else if(weather == "눈")
+										recommend = "마들렌 레시피를 추천합니다!";
+									else
+										recommend = "날씨를 선택해주세요!"
+									alert(recommend);	
+									}								
+								</script>
+							</form>
+						</nav>
+					</aside>
+					<section>
+						<nav>
+							<div class="bold-text"><strong>&emsp;레시피</strong></div>
+							<hr>
+							<div class="title">&emsp;&nbsp;당근케이크 레시피 <span class="title_date"> (2022. 12. 14 20:50)</span></div>
+							<video src="당근케이크.mp4" width="500" height="300" controls>브라우저가 video 태그를 지원하지 않습니다.</video>
+							<details>
+								<summary>준비물</summary>
+								<ul>
+									<li>계란 2개(100~110g)</li>
+									<li>설탕 110g</li>
+									<li>바닐라액 2g</li>
+									<li>꿀 30g</li>
+									<li>버터 60g</li>
+									<li>식용유 50</li>
+									<li>박력분 150g</li>
+									<li>당근 150g</li>
+									<li>다진호두 20g</li>
+									<li>간 호두 50g</li>
+									<li>시나몬가루 2g</li>
+									<li>베이킹파우더 4g</li>
+									<li>베이킹소다 1g</li>
+									<li>슬라이스 당근 약간</li>
+								</ul>
+							</details>
+							<details>
+								<summary>레시피</summary>
+								<ul style="list-style-type: decimal;">
+									<p style="color:blue">&lt;시트&gt;</p>
+									<li>버터를 중불에서 끓이다가 갈색이 날때 불에서 내린다.</li>
+									<li>체로 걸러준다.</li>
+									<li>박력분+시나몬가루+베이킹파우더+베이킹소다를 섞어준다.</li>
+									<li>달걀 2개와 설탕을 섞어준다.</li>
+									<li>바닐라액+꿀+식용유+버터를 넣고 1단으로 1분간 휘핑해준다.</li>
+									<li>이 위에 아까 작업했던 박력분을 넣고 섞어준다.(안보일때까지)</li>
+									<li>체에 썰었던 당근과 호두를 넣고 골고루 섞어준다.</li>
+									<li>원형팬에 반죽을 넣어준다.</li>
+									<li>식용유를 칼에 발라서 반죽에 미리 칼집을 내준다.</li>
+									<li>오븐에 170도로 맞춰서 50분간 넣어준다.</li>
+									<p style="color:blue">&lt;크림치즈프로스팅&gt;</p>
+									<li>생크림을 냉동실에 잠시 넣어둔다.</li>
+									<li>크림치즈를 부드러워지도록 풀어준다.</li>
+									<li>크림치즈+설탕+생크림을 휘핑해준다.</li>
+									<li>레몬즙과 레몬 껍질을 넣고 잘 섞어준다.</li>
+									<p style="color:blue">&lt;완성&gt;</p>
+									<li>시트를 3등분하고 사이에 크림을 발라준다.</li>
+									<li>당근을 올려주면 끝!</li>
+								</ul>
+							</details>
+							<details>
+								<summary>추천 음료</summary>
+								<ul>
+									<li>아메리카노</li>
+									<li>카라멜마끼야또</li>
+								</ul>
+							</details>
+
+							<div class="title">&emsp;&nbsp;마들렌 레시피 <span class="title_date"> (2022. 12. 09 12:27)</span></div>
+							<video src="마들렌.mp4" width="500" height="300" controls>브라우저가 video 태그를 지원하지 않습니다.</video>
+							<details>
+								<summary>준비물</summary>
+								<ul>
+									<li>계란 60g</li>
+									<li>버터 60g</li>
+									<li>설탕 60g</li>
+									<li>박력분 60g</li>
+									<li>베이킹파우더 2g</li>
+									<li>레몬 껍질(제스트)</li>
+								</ul>
+							</details>
+							<details>
+								<summary>레시피</summary>
+								<ul style="list-style-type: decimal;">
+									<p style="color:blue">&lt;사전작업&gt;</p>
+									<li>실온에 둔 버터를 틀에 발라 주세요.</li>
+									<li>밀가루는 미리 1번 체를 쳐 놓으세요.</li>
+									<li style="color:red">레몬은 깨끗하게 세척하여 준비해 두세요.(중요)</li>
+								</ul>
+								<ul style="list-style-type: decimal;">
+									<p style="color:blue">&lt;시작&gt;</p>
+									<span style="color:blue">레몬설탕</span>
+									<li>틀을 냉장고에 보관해주세요.</li>
+									<li>레몬껍질을 갈아주세요.(하얀부분은 제외)</li>
+									<li>설탕과 레몬껍질을 섞어주세요.</li>
+									<span style="color:blue">반죽</span>
+									<li>계란을 풀어 준 후에 설탕을 넣어주세요.</li>
+									<li>만들어 놓았던 레몬설탕을 넣어서 섞어주세요.(거품X)</li>
+									<li>박력분과 베이킹파우더를 함께 체 쳐주고 섞어주세요. (가루가 보이지 않을 때까지 가볍게!)</li>
+									<li>40~50도로 녹인 버터를 넣고 섞어주세요.</li>
+									<li>랩으로 싸서 냉장실에 1시간 동안 숙성시켜 주세요.</li>
+									<li>오븐을 180도로 예열해주세요.</li>
+									<li>냉장고에 보관해 두었던 틀을 가져와서 강력분을 뿌려 코팅해 주세요.</li>
+									<li>냉장고에서 숙성된 반죽을 가져와서 전체적으로 한번 섞어주세요.</li>
+									<li>틀에 반죽을 90% 채워 주세요.</li>
+									<li>예열한 오븐에서 12분간 구워 주세요.</li>
+								</ul>
+							</details>
+							<details>
+								<summary>추천 음료</summary>
+								<ul>
+									<li>아메리카노</li>
+									<li>녹차라떼</li>
+									<li>초코라떼</li>
+								</ul>
+							</details>
+
+							<div class="title">&emsp;&nbsp;호떡 레시피 <span class="title_date"> (2022. 12. 08 15:23)</span></div>
+							<video src="호떡.mp4" width="500" height="300" controls>브라우저가 video 태그를 지원하지 않습니다.</video>
+							<details>
+								<summary>준비물</summary>
+								<ul>
+									<li>찹쌀 호떡 믹스</li>
+								</ul>
+							</details>
+							<details>
+								<summary>레시피</summary>
+								<ul style="list-style-type: decimal;">
+									<li>차가운 물 2/3, 끓는 물 1/3(종이컵 기준)을 그릇에 넣는다.</li>
+									<li>이스트를 넣고 저어준다.</li>
+									<li>호떡 믹스를 넣고 반죽한다.(약 4분)</li>
+									<li>접시에 잼믹스를 넣는다.</li>
+									<li>반죽을 넓게 펴서 잼믹스를 넣고 오므려준다.</li>
+									<li>프라이팬에 기름을 두르고 약불에 굽는다.</li>
+									<li>밑부분에 갈색빛이 돌면 뒤집어서 누른다.</li>
+									<li>양면이 노릇노릇해지면 완성!</li>
+								</ul>
+							</details>
+							<details>
+								<summary>추천 음료</summary>
+								<ul>
+									<li>아메리카노</li>
+									<li>우유</li>
+								</ul>
+							</details>
+
+							<div class="title">&emsp;&nbsp;쿠키 레시피 <span class="title_date"> (2022. 12. 06 17:30)</span></div>
+							<video src="쿠키.mp4" width="500" height="300" controls>브라우저가 video 태그를 지원하지 않습니다.</video>
+							<details>
+								<summary>준비물</summary>
+								<ul>
+									<li>무염버터 100g</li>
+									<li>설탕 90g</li>
+									<li>달걀 1개</li>
+									<li>박력분 250g</li>
+									<li>베이킹 파우더 2g</li>
+									<li>소금 2g</li>
+								</ul>
+							</details>
+							<details>
+								<summary>레시피</summary>
+								<ul style="list-style-type: decimal;">
+									<p style="color:blue">&lt;사전작업&gt;</p>
+									<li>버터, 계란은 미리 냉장고에서 꺼내 놓는다</li><li>오븐은 미리 170도로 예열해 놓는다.</li>
+								</ul>
+								<ul style="list-style-type: decimal;">
+									<p style="color:blue">&lt;시작&gt;</p>
+									<li>무염버터가 녹을 때까지 기다린다.(손에 묻어 나올 정도)</li>
+									<li>버터를 풀어준다.</li>
+									<li>설탕을 2번 분할하여 넣는다.</li>
+									<li>크림화가 될 때까지 힘차게 섞어준다.</li>
+									<li>(계란+소금)을 섞어서 2번 나누어 넣는다.</li>
+									<li>계란이 완전히 섞이도록 저어준다.</li>
+									<li>박력분과 베이킹 파우더를 체에 걸러서 넣어준다.</li>
+									<li>밑에서 위로 골고루 섞어주며 11자를 그리면서 섞어준다.(한 덩어리가 될 때까지 반복)</li>
+									<li>반죽을 비닐에 넣고 평평하게 펴준다.</li>
+									<li>반죽을 약 5mm 정도가 되도록 펴준다.</li>
+									<li>냉장실에서 30분~1시간 정도 숙성시킨다.</li>
+									<span style="color:blue">숙성 후</span>
+									<li>버터가 녹지 않게 최대한 신속하게 틀로 반죽을 찍어준다.</li>
+									<li>170도로 예열한 오븐에서 15분~20분간 구워준다.</li>
+									<li>식혀주면 완성</li>
+								</ul>
+							</details>
+							<details>
+								<summary>추천 음료</summary>
+								<ul>
+									<li>오렌지 주스</li>
+									<li>초코라떼</li>
+									<li>우유</li>
+								</ul>
+							</details>
+														
+							<div class="title">&emsp;&nbsp;빙수 레시피 <span class="title_date"> (2022. 11. 12 23:07)</span></div>
+							<video src="빙수.mp4" width="500" height="300" controls>브라우저가 video 태그를 지원하지 않습니다.</video>
+							<details>
+								<summary>준비물</summary>
+								<ul>
+									<li>이중 지퍼백</li>
+									<li>우유 500ml</li>
+									<li>토핑(취향대로)</li>
+								</ul>
+							</details>
+							<details>
+								<summary>레시피</summary>
+								<ul style="list-style-type: decimal;">
+									<li>이중 지퍼백에 우유를 다 부어준다.</li>
+									<li>지퍼백에 공기를 빼고 입구를 닫아준다.</li>
+									<li>지퍼백을 평평하게 눕혀서 냉동실에 하루정도 얼려준다.</li>
+									<li>얼린 우유를 손으로 잘게 부셔준다.</li>
+									<li>그릇에 담아준다.</li>
+									<li>토핑을 올려준다.</li>
+								</ul>
+							</details>
+							<details>
+								<summary>추천 음료</summary>
+								<ul>
+									<li>아메리카노</li>
+									<li>카페라떼</li>
+								</ul>
+							</details>
+						</nav>
+					</section>
+				</div> <!--window-->
+			</div> <!--page-->
+		</div> <!--bookdot-->
+	</div> <!--bookcover-->
+</body>
+</html>
