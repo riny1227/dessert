@@ -1,0 +1,146 @@
+body{
+    background-image: url("background_pattern.jpg");
+}
+.bookcover{
+    background-color:#a2d7db;
+    border-radius:9px;
+    width:1000px;
+    height:615px;
+    margin:120px auto;
+    padding:9px;
+    position:relative;
+}
+.bookdot{
+    position:absolute;
+    top:15px;
+    bottom:15px;
+    left:15px;
+    right:15px;
+    border:2px dashed white;
+    border-radius:9px;
+}
+.page{
+    position:absolute; 
+    background-color:#fbfdfe; 
+    top:15px;
+    bottom:15px;
+    left:15px;
+    right:15px;
+    border-radius:9px;
+}
+#day{
+    font: 18px cursive;
+    padding:15px;
+    margin:0 auto;
+}
+
+#menubar{
+	background: #85ccd2;
+}
+#menubar ul{
+	margin: 0;
+	padding: 0;
+	width: 700px;
+	height: 35px;
+}
+#menubar ul li{
+	display: inline-block;
+	list-style-type: none;
+	padding: 5px 25px;
+}
+a{
+	color: whitesmoke;
+	text-decoration: none;
+	font: bold 18px;
+}
+a:hover{
+	color:black;
+}
+
+#window > aside{
+	float:left;
+}
+#window > section{
+	float:left;
+}
+
+aside{
+    background-color: white;
+    border:3px solid silver;
+    border-radius: 9px;	
+    margin-left:18px;
+}
+aside > nav{
+	margin:10px 10px;
+}
+section{
+
+    background-color: white;
+    border:3px solid silver;
+    border-radius: 9px;
+    margin-left:12px;
+}
+section > nav{
+	margin-right:20px;
+	margin-left:20px;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+.text{
+	font: 15px monospace;
+}
+.bold-text{
+    color:steelblue;
+    font: sans-serif;
+}
+.left{
+	font-size:13px;
+	color:black;
+}
+#board{
+	color:whitesmoke;
+	background-color: red;
+	font-size:14px;
+	border-radius: 3px;
+}
+#recipe{
+	color:whitesmoke;
+	background-color: blue;
+	font-size:14px;
+	border-radius: 3px;
+}
+.right{
+	font-size:13px;
+	color:black;
+}
+#number{
+	color:navy;
+	font-size:16px;
+}
+#update-news > div{
+	float:left;
+}
+#update-news{
+	margin:0px;
+}
+
+.title{
+	margin:10px;
+	height:35px;
+	font-size:16px;
+	font-weight:70;
+	line-height:35px;
+	background-color:whitesmoke;
+}
+.title_date{
+	font-size:12px;
+	color:steelblue;
+}
+
+#preview > div{
+	float:left;
+}
+#preview{
+	margin:0px;
+}
